@@ -14,6 +14,7 @@
     <modules>
         <module>smart-spring-ioc</module>
         <module>smart-spring-design-patterns</module>
+        <module>smart-spring-aop</module>
     </modules>
 
     <dependencyManagement>
