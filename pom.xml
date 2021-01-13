@@ -15,10 +15,22 @@
         <module>smart-spring-ioc</module>
         <module>smart-spring-design-patterns</module>
         <module>smart-spring-aop</module>
+        <module>smart-spring-boot</module>
     </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.encoding>UTF-8</java.encoding>
+        <java.version>1.8</java.version>
+        <spring.boot.version>2.4.1</spring.boot.version>
+        <lombok.version>1.16.16</lombok.version>
+        <mybatis-spring.version>1.3.0</mybatis-spring.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
@@ -29,8 +41,17 @@
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>
                 <version>1.9.6</version>
-               <!-- <scope>runtime</scope>-->
+                <!-- <scope>runtime</scope>-->
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
